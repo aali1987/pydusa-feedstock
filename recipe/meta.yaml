@@ -12,7 +12,6 @@ build:
 
 requirements:
     build:
-        - python
         - numpy 1.13.*
         - openmpi 2.0.2
         - fftw-mpi
