@@ -21,10 +21,9 @@ requirements:
         - openmpi 2.1.1
         - fftw-mpi
     run:
-        - python 3.6.*
-        - numpy 1.13.*
-        - openmpi 2.1.1
-        - fftw-mpi
+      {% for package in resolved_packages('host') %}
+        - {{ package }}
+      {% endfor %}
 
 test:
   imports:
