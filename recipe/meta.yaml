@@ -18,7 +18,7 @@ requirements:
     host:
         - python 3.6.*
         - numpy 1.13.*
-        - openmpi 2.0.2
+        - cryoem::openmpi
         - fftw-mpi
     run:
       {% for package in resolved_packages('host') %}
